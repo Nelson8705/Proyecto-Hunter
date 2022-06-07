@@ -59,8 +59,9 @@ body {
             top: 0%;
             width: 100%;
             position: fixed;
+            z-index: 10;
             
-            
+           
             }
 
 
@@ -75,20 +76,16 @@ body {
         width: 18rem;
         }
 
-        .ulMenu {
+        .navbar-nav {
             font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 1.5rem;
-            list-style: none;
-            display: flex;
-            align-items: center;
-            padding-right: 3rem;
-            
         }
 
-        .ulMenu li {
+     
+        .navbar-nav li {
             margin: auto;
         }
 
-        .ulMenu li a{
+        .navbar-nav li a{
             text-decoration: none;
             color: #dfceb0;
             padding: 1rem; 
@@ -97,8 +94,12 @@ body {
              
         }
 
-    .ulMenu li a:hover{
+        .navbar-nav li a:hover{
             background: #d7a765;
+        }
+
+        .navbar-toggler {
+            border-color:  #dfceb0;
         }
 
        
@@ -108,11 +109,7 @@ body {
         }
 
 
-        .slider                 
-
-                    .img-slider {
-                       width: 100%;
-                        }
+      
 
 
 
@@ -350,15 +347,16 @@ body {
 
 
         .divContacto {
-            display: flex;
-            justify-content:space-around;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
             padding-bottom: 3rem;
         }
        
     
         .sectContacto {
             padding-top: 1%;
-            margin-left: -3%;
+           margin-left: 11%;
             
         }
         .sectContacto input{
@@ -371,9 +369,21 @@ body {
             padding-left: 3%;
             color: #dfceb0;
             
+
+                   
             
         }
+
+        
     
+        .formContacto {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+
+
         .input1 {
             margin-top: 1%;
         }
@@ -399,7 +409,8 @@ body {
 
     .infoContacto img{
         width: 2rem;
-        padding-left: 5.5rem;
+        margin-left: 3rem;
+
         
     }
 
@@ -416,7 +427,7 @@ body {
 
     .mapa {
         border-radius: 2%;
-        margin-left: 20%;
+        margin-left: 15%;
         
     }
 
@@ -505,6 +516,16 @@ body {
 
     /* MIS MEDIA QUERIES*/
 
+    @media (max-width: 990px) {  
+
+        .mapa {
+            border-radius: 2%;
+            margin-left: -3%;
+            
+        }
+
+    }
+
     @media (max-width: 768px) {
         
         .section {
@@ -514,30 +535,15 @@ body {
             
             }
             
-            nav {
-               flex-direction: column;
-                align-items: center;
-
+            .navbar-nav {
+                font-size: 1.25rem;
             }
             .Logo-horizontal {
                 width: 15rem;
                 
                 }   
                 
-            .ulMenu {
-                font-size: 1rem;
-                padding-right: 0rem;
-                margin:0%;
-                display: grid;
-                grid-template-columns: repeat(5,1fr);
-            }
-
-            .ulMenu li{
-                margin-top: 0px;
-                margin-bottom: 0px;
-                padding-top: 0%;
-                padding-bottom: 0%;
-            }    
+                /* INDEX*/
           
             .link h3 {
                 
@@ -553,34 +559,56 @@ body {
                 margin-bottom: 0,75rem;
             }
            
-            .divServicios {
-                margin-top: 12%;
+            main {
+                padding-top: 6rem;
+            }
+    
+
+
+            /* CONTACTO*/
+
+            .divContacto {
+                display: grid;
+                grid-template-columns: 1fr;
+                align-items: center;
+                padding-bottom: 3rem;
+            }
+            
+            .sectContacto {
+                padding-top: 3%;
+               margin-left: 4%;
+            }
+
+            .mapa {
+                border-radius: 2%;
+                margin-left: 7%;
+                margin-top: 6%;
+                
             }
 
         }
+
+        
     
 
         @media (max-width: 469px) {
 
 
             main {
-                padding-top: 9rem;
+                padding-top: 4.5rem;
             }
     
     
-            .ulMenu {
-                
-                grid-template-columns: repeat(3,1fr);
-                font-size: 0,5rem;
-            }
-    
+              
     
             .Logo-horizontal {
                 width: 10rem;
                 
                 }  
     
-    
+                
+                /* INDEX*/
+
             .newsletter h3 {
                 font-size: 13px;
             }
@@ -607,7 +635,42 @@ body {
             }
         
             .divServicios {
-                margin-top: 16%;
+                margin-top: 13%;
+            }
+
+
+
+            /* NOSOTROS*/
+
+
+            .nosotros {
+                margin-top: 3rem;
+            }
+
+
+
+            /* CONTACTO*/
+
+            .mapa {
+                width: 17rem;
+
+                
+            }
+
+            .infoContacto img{
+                
+                margin-left: 1rem;
+        
+                
+            }
+
+            .infoContacto span{
+                font-size: 0.8rem;
+            }
+
+            /* SUMATE A HUNTER*/
+
+            .inputLast {
+                font-size: 0.9rem;
             }
         }
-
