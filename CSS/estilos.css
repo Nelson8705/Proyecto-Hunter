@@ -559,6 +559,17 @@ body {
         width: 50%;
     }
 
+    /* CONTACTO - DIFERENCIADO */
+    
+    #exampleFormControlInput1 {
+        width: 100%;
+    }
+
+    #exampleFormControlTextarea1 {
+        width: 100%;
+    }
+    /*------------------------*/
+
 
     #lastbutton {
         
