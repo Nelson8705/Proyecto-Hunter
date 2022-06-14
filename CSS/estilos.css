@@ -20,7 +20,7 @@ input,select{vertical-align:middle}
 
 h1 {
     font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 1.5rem;
-    margin-left: 7%;
+    margin-left: 4%;
     margin-top: 3%;
     color: #dfceb0;
 }
@@ -215,9 +215,21 @@ body {
                     .formNews input, button {
                         border-radius: 5px;
                         padding: 0.25rem;
+                        
                     }
 
+                    .formNews button {
+                        background-color:#333;
+                        border-color: #000;
+                        color: white;
+                        transition: 1s;
+                    }
                     
+                    .formNews button:hover {
+                        background-color: #d7a765;
+                        border-color: #000;
+                        color: black;
+                    }
 
 
 
@@ -263,11 +275,16 @@ body {
                         padding: 1rem;
                         margin-bottom: 1rem;
                         transition: 1s;
+                        background-color:#333;
+                        border-color: #000;
+                        color: white;
                         
                     }
 
                     .link input:hover {
                         background-color:  #d7a765;
+                        border-color: #000;
+                        color: black;
                     }
 
                   
@@ -348,33 +365,32 @@ body {
 
         .divContacto {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: 2fr 1fr;
             align-items: center;
-            padding-bottom: 3rem;
+           
+           
         }
        
     
         .sectContacto {
             padding-top: 1%;
-           margin-left: 11%;
+           margin-left: 6%;
+           align-items: center;
+           grid-area: 2fr;
             
         }
         .sectContacto input{
             display: block;
-            margin-left: 3%;
+            
         }
     
-        .sectContacto span{
+        .dejanos {
             padding-top: 6%;
-            padding-left: 3%;
             color: #dfceb0;
-            
-
-                   
             
         }
 
-        
+                
     
         .formContacto {
             display: flex;
@@ -387,18 +403,37 @@ body {
         .input1 {
             margin-top: 1%;
         }
+
         .sectContacto textarea{
-            margin-left: 3%;
+            padding: 2%;
         
     }
 
+        .mb-3 {
+            padding-right:30%;
+            
+        }
+
+        .form-label {
+            margin-left: 0%;
+        }
+        
+        
+
+
+
     .sectContacto button{
-        margin-left: 3%;
+        
+        background-color:#333;
+        border-color: #000;     
+        margin-left: -80%;
+        margin-bottom: 5%;        
         transition: 1s;
     }
     
     .sectContacto button:hover {
         background-color: #d7a765;
+        border-color: #000;
     }
 
     .infoContacto {
@@ -427,7 +462,7 @@ body {
 
     .mapa {
         border-radius: 2%;
-        margin-left: 15%;
+        height: 80%;
         
     }
 
@@ -493,12 +528,19 @@ body {
 
 /* SUMATE A HUNTER MD*/
 
-    .formSumate {
-        display: flex;
-        flex-direction: column;
+.formSumate {
+        display: grid;
+        align-content: initial;
         margin-top: 3%;
-        margin-left: 7%;
+        margin-left: 4%;
+        background-image: url(../IMÁGENES/REDES\ Y\ COMUNICACION.jpg);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: 200%;
+        background-position-y: top;
+        
     }
+
 
     .inputLast {
         padding-top: 2%;
@@ -509,12 +551,63 @@ body {
         color: #dfceb0;
     }
 
-    .lastbutton {
-        margin-bottom: 4%;
+    .formNews{
+        align-items: flex-start;
+    }
+
+    .form-control {
+        width: 50%;
     }
 
 
+    #lastbutton {
+        
+        background-color:#333;
+        border-color: #000;      
+        align-self:flex-start;
+        margin: 0rem 0rem 3rem 0rem;  
+
+        transition: 1s;
+    }
+    
+    #lastbutton:hover {
+        background-color: #d7a765;
+        border-color: #000;
+
+    }
+
+    
     /* MIS MEDIA QUERIES*/
+
+
+    @media (max-width: 1440px) {
+
+        #lastbutton {
+            margin-right: 40%;
+        }
+
+    }
+
+
+
+    @media (max-width: 1310px) {
+
+        .divContacto {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+           
+           
+        }
+        
+        .mapa {
+            border-radius: 2%;
+            margin-left: 15%;
+            
+        }
+
+    }
+
 
     @media (max-width: 990px) {  
 
@@ -564,6 +657,14 @@ body {
             }
     
 
+            .formSumate {
+                background-image: none;
+                
+            }
+
+            .form-control {
+                width: 100%;
+            }
 
             /* CONTACTO*/
 
@@ -571,18 +672,22 @@ body {
                 display: grid;
                 grid-template-columns: 1fr;
                 align-items: center;
-                padding-bottom: 3rem;
+                padding-bottom: 20rem;
+                
             }
             
             .sectContacto {
-                padding-top: 3%;
+               padding-top: 3%;
                margin-left: 4%;
             }
 
             .mapa {
                 border-radius: 2%;
-                margin-left: 7%;
+                margin-left: 5%;
                 margin-top: 6%;
+                padding-top: 30%;
+                width: 80%;
+                height: 200%
                 
             }
 
@@ -609,6 +714,24 @@ body {
                 
                 /* INDEX*/
 
+                .lamparita {
+                    width: 5rem;
+                    
+                                              
+                }
+                  
+              
+                .megafono {
+                    width: 8.5rem;
+                    }
+
+
+                .grafico {
+                    width: 7rem;
+                }
+
+            
+                
             .newsletter h3 {
                 font-size: 13px;
             }
@@ -652,8 +775,14 @@ body {
             /* CONTACTO*/
 
             .mapa {
-                width: 17rem;
+                padding-top: 30%;
+                height: 150%;
+                
+                
+            }
 
+            .divContacto {
+                padding-bottom: 10rem;
                 
             }
 
