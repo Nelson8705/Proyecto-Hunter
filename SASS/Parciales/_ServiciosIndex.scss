@@ -1,0 +1,70 @@
+@import "./variables";
+
+
+
+  .ServiciosIndex {
+            
+    font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 1.4rem;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(3,1fr);
+    padding: 3%;
+    column-gap: 1rem;
+
+
+
+        &__item{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+              }
+
+                &__link{
+                    text-decoration: none;
+                    color: $doradoLetra;
+                    padding: 1rem; 
+                    text-align: center;
+    
+                     }
+        
+        
+                          &__lamparita {
+                            width: 10rem;
+                            transition: width 1s;
+
+                       }
+                                      &__lamparita:hover {
+                                              width: 13rem;
+                                  }
+        
+          
+                          &__megafono {
+                              width: 17rem;
+                              transition: width 1s;    
+                              }
+        
+                                       &__megafono:hover {
+                                           width: 20rem;
+                                   }
+        
+                           &__grafico {
+                               width: 14rem;
+                               transition: width 1s;
+
+                           }
+                                    &__grafico:hover {
+                                        width: 17rem;
+                                         }
+
+    }   
+       
+    
+
+    #ServiciosIndex__item3{
+      padding-bottom: 1rem;
+    }      
+
+
+
+   

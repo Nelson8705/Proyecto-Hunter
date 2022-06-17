@@ -1,0 +1,225 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+@import "./Parciales/variables";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mukta:wght@800&family=Roboto:wght@100;300;400;700;900&display=swap');
+
+
+
+h1 { 
+    font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 1.5rem;
+    margin-left: 4%;
+    margin-top: 3%;
+    color: $doradoLetra;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h3 {
+    font-family: 'Mukta', sans-serif; font-weight: bold;
+}
+
+.fontForm {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+body {
+    background-color: $verde;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    }
+
+    
+    header,footer {
+        background-color:$grisOscuro;
+        }
+        
+        header {
+            top: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+            
+           
+            }
+
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    
+    .Logo-horizontal {
+        width: 18rem;
+        }
+
+        .navbar-nav {
+            font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 1.5rem;
+        }
+
+     
+        .navbar-nav li {
+            margin: auto;
+        }
+        
+        .navbar-nav li a{
+            text-decoration: none;
+            color:$doradoLetra;
+            padding: 1rem; 
+            text-align: center; 
+            
+            
+        }
+        
+        .navbar-nav li a:hover{
+            background:$doradoHover;
+        }
+        
+        .navbar-toggler {
+            border-color:$doradoLetra;
+        }
+        
+        
+        
+        main {
+            padding-top: 7rem;
+        }
+
+
+      
+
+
+
+        .divisor1 {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            margin-top: -1rem;
+            
+            background-color:$grisOscuro;
+            }
+
+           
+                      
+            @import "./Parciales/ServiciosIndex";
+
+            .newsletter {
+                background: #919191;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+    
+            }
+    
+                        .newsletter h3 {
+                            text-align: center;
+                            color: #333;
+                            font-size: 1.1rem;
+                        }
+    
+                        .formNews {
+                            text-align: center;
+                            padding-top: 3%;
+                        }
+    
+                        .formNews input, button {
+                            border-radius: 5px;
+                            padding: 0.25rem;
+                            
+                        }
+    
+                        .formNews button {
+                            background-color:#333;
+                            border-color: #000;
+                            color: white;
+                            transition: 1s;
+                        }
+                        
+                        .formNews button:hover {
+                            background-color: #d7a765;
+                            border-color: #000;
+                            color: black;
+                        }
+    
+            @import "./Parciales/empleo";
+    
+    
+            
+            .miraTele {
+                                 width:5rem;
+                                 
+                                 
+            }
+    
+    
+    
+            footer {
+                padding-top: 0.5rem;
+                padding-bottom: 2rem;
+                
+                
+            }
+    
+            .footerSup {
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between
+                
+                
+            }
+    
+            
+            
+            .logoVertical {
+                width: 7rem;
+              
+                          
+            }
+            
+            .iconSocialMedia {
+                display: inline;
+                list-style: none;
+                display: flex;
+                margin-right: 3%;
+                
+                
+            }
+    
+            .iconSocialMedia img{
+                width: 2rem;
+                
+                            
+            }
+    
+            .copyright {
+                color:#dfceb0;
+             
+                font-size: 0.75rem;
+    
+    
+            }
