@@ -25,7 +25,7 @@ input,select{vertical-align:middle}
 
 h1 { 
     font-family: 'Bebas Neue', cursive; font-weight: bold; font-size: 1.5rem;
-    margin-left: 4%;
+    margin-left: 7%;
     margin-top: 3%;
     color: map-get($colores,"doradoletra");
 }
@@ -363,9 +363,40 @@ body {
 
 /*SERVICIOS*/
 
-
+.h1Servicios {
+    margin-left: 7%;
+}
 .divServicios {
-    margin-top: 7%;
+    margin-top: 4%;
+    background-image:url(../IMÁGENES/Servicios1.jpg);
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    background-position: 98%;
+    background-position-y: 55%;
+}
+
+.DivFinal {
+    color: #dfceb0;
+    margin-right: 2%;
+    background-image: url(../IMÁGENES/Servicios2.jpg);
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    background-position-x: 12%;
+    background-position-y: 55%;
+}
+
+.DivFinal p{
+    margin-left: 58%;
+    color: #dfceb0;
+    margin-right: 2%;
+}
+
+.divServicios p {
+    margin-right: 50%;
+    padding-top: 1%;
+    padding-left: 7%;
+    color: #dfceb0;
+    padding-bottom: 3%;
 }
 
 .divServicios h3 {
@@ -373,19 +404,21 @@ body {
     color: #dfceb0;
 }
 
-.subServicios {
-    font-size: 1.5rem;
+.divServicios2 h3 {
     margin-left: 7%;
     color: #dfceb0;
 }
 
-.pServicio {
-    padding-top: 1%;
-    padding-left: 7%;
-    margin-right: 30%;
-    color: #dfceb0;
-    padding-bottom: 3%;
+.DivFinal h3{
+    margin-left: 58%;
 }
+
+.subServicios {
+    font-size: 1.5rem;
+    margin-left: 58%;
+    color: #dfceb0;
+}
+
 
 .pServicio1 {
     padding-top: 3%;
@@ -398,9 +431,9 @@ body {
 .ulServicios {
     padding-top: 1%;
     padding-left: 9%;
-    margin-right: 30%;
     color: #dfceb0;
     padding-bottom: 3%;
+    margin-left: 58%;
 }
 
 .linkContact {
@@ -541,12 +574,68 @@ h4 {
 
 
 @media (max-width: 990px) {
+ 
+    /*CONTACTO*/
 
     .mapa {
         border-radius: 2%;
         margin-left: -3%;
 
     }
+
+    /*SERVICIOS*/
+
+    .divServicios {
+        background-image:url(../IMÁGENES/Servicios1.jpg);
+        background-size: 25rem;
+        margin-top: 1%;
+        background-position: 98%;
+        background-position-y: 30%;
+    }
+    
+    .DivFinal {
+        background-image: url(../IMÁGENES/Servicios2.jpg);
+        background-size: 25rem;
+       
+    }
+
+   
+    
+    .divServicios p {
+        margin-right: 55%;
+        padding-top: 1%;
+        padding-left: 7%;
+        color: #dfceb0;
+        padding-bottom: 3%;
+    }
+    
+    .divServicios h3 {
+        margin-left: 7%;
+        color: #dfceb0;
+    }
+    
+    .divServicios2 h3 {
+        margin-left: 7%;
+        color: #dfceb0;
+    }
+    
+    .DivFinal h3{
+        margin-left: 58%;
+    }
+    
+    #pRedes {
+        margin-left: 7%;
+    }
+
+    .subServicios {
+        font-size: 1.5rem;
+        margin-left: 7%;
+        color: #dfceb0;
+    }
+    
+    
+    
+
 
 }
 
@@ -636,6 +725,56 @@ h4 {
         height: 200%
     }
 
+    /*SERVICIOS*/
+    .divServicios {
+        background-image:url(../IMÁGENES/img1.png);
+        background-size: 5rem;
+        background-position: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .DivFinal {
+        background-image: none;
+       
+    }
+
+   
+    
+    .divServicios p {
+        margin-right: 10%;
+        padding-top: 1%;
+        padding-left: 7%;
+        color: #dfceb0;
+        padding-bottom: 3%;
+    }
+    
+    .divServicios h3 {
+        margin-left: 7%;
+    }
+    
+    .divServicios2 h3 {
+        margin-left: 7%;
+    }
+    
+    .DivFinal h3{
+        margin-left: 7%;
+    }
+    
+    .DivFinal p{ 
+        margin-left: 7%;
+    }
+
+    #pRedes {
+        margin-left: 7%;
+    }
+
+    .subServicios {
+        margin-left: 7%;
+    }
+
+    .ulServicios {
+        margin-left: 7%;
+    }
 }
 
 
