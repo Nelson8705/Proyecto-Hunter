@@ -14,8 +14,8 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 
-@import "./Parciales/variables";
-@import "./Parciales/mixins";
+@import "./parciales/variables";
+@import "./parciales/mixins";
 
 
 
@@ -48,12 +48,15 @@ h4 {
 }
 
 
-
+html {
+    height: 100%;
+}
 
 body {
     background-color: map-get($colores, "verde");
     display: grid;
     grid-template-rows: auto 1fr auto;
+    min-height: 100%;
     }
 
     
@@ -129,7 +132,7 @@ body {
 
            
                       
-            @import "./Parciales/ServiciosIndex";
+            @import "./parciales/serviciosIndex";
 
             .newsletter {
                 background: #919191;
@@ -168,7 +171,7 @@ body {
                             color: black;
                         }
     
-            @import "./Parciales/empleo";
+            @import "./parciales/empleo";
     
     
             
@@ -183,6 +186,7 @@ body {
             footer {
                 padding-top: 0.5rem;
                 padding-bottom: 2rem;
+                margin-top: auto;
                 
                 
             }
@@ -231,6 +235,7 @@ body {
             
 /*NOSOTROS*/
 
+
 .presentacion {
     padding-top: 3%;
     padding-left: 2%;
@@ -245,11 +250,12 @@ body {
     align-content: initial;
     margin-top: 3%;
     margin-left: 4%;
-    background-image: url(../IMÁGENES/Reuniónejecutiva.jpg);
+    background-image: url(../imagenes/reunion.jpg);
     background-size: 30rem;
     background-repeat: no-repeat;
     background-position: 100%;
     background-position-y: top;
+    
 }
 
 
@@ -368,7 +374,7 @@ body {
 }
 .divServicios {
     margin-top: 4%;
-    background-image:url(../IMÁGENES/Servicios1.jpg);
+    background-image:url(../imagenes/servicios1.jpg);
     background-size: 30rem;
     background-repeat: no-repeat;
     background-position: 98%;
@@ -378,7 +384,7 @@ body {
 .DivFinal {
     color: #dfceb0;
     margin-right: 2%;
-    background-image: url(../IMÁGENES/Servicios2.jpg);
+    background-image: url(../imagenes/servicios2.jpg);
     background-size: 30rem;
     background-repeat: no-repeat;
     background-position-x: 12%;
@@ -459,7 +465,7 @@ body {
     align-content: initial;
     margin-top: 3%;
     margin-left: 4%;
-    background-image: url(../IMÁGENES/REDES-COMUNICACION.jpg);
+    background-image: url(../imagenes/redes-comunicacion.jpg);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: 200%;
@@ -586,7 +592,7 @@ h4 {
     /*SERVICIOS*/
 
     .divServicios {
-        background-image:url(../IMÁGENES/Servicios1.jpg);
+        background-image:url(../imagenes/servicios1.jpg);
         background-size: 25rem;
         margin-top: 1%;
         background-position: 98%;
@@ -594,7 +600,7 @@ h4 {
     }
     
     .DivFinal {
-        background-image: url(../IMÁGENES/Servicios2.jpg);
+        background-image: url(../imagenes/servicios2.jpg);
         background-size: 25rem;
        
     }
@@ -727,7 +733,7 @@ h4 {
 
     /*SERVICIOS*/
     .divServicios {
-        background-image:url(../IMÁGENES/img1.png);
+        background-image:url(../imagenes/img1.png);
         background-size: 5rem;
         background-position: 100%;
         background-repeat: no-repeat;
